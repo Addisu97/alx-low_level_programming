@@ -1,26 +1,23 @@
-
 #include <stdio.h>
 /**
- *main - entry point
- *
- *Description:prints number from 00 to 99
- *
- *Return:always zero
+ * main - program that prints numbers from 0 to 99.
+ * Return: 0
  */
+
 int main(void)
 {
-	int dig;
-
-	for (dig = 0; dig < 100; dig++)
-	{
-		putchar((dig / 10) + '0');
-		putchar((dig % 10) + '0');
-		if (dig < 99)
-		{
-			putchar(44);
-			putchar(32);
-		}
-	}
-	putchar(10);
-	return (0);
+int c = 0;
+while (c <= 99)
+{
+putchar(c / 10 + '0');
+putchar(c % 10 + '0');
+if (c != 99)
+{
+putchar(',');
+putchar(' ');
+}
+c++;
+}
+putchar('\n');
+return (0);
 }
