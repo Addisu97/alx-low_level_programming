@@ -1,22 +1,21 @@
-#ifndef MAIN_H
-#define MAIN_H
-
+#ifndef MAIN_FUNTIONS
+#define MAIN_FUNTIONS
 /**
- * File: Header file containing prototypes for all functions
- *       used in the 0x06-pointers_arrays_strings directory.
+ * _putchar - writes the character c to stdout
+ * @c: The character to print
+ *
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
  */
-
-#include <stddef.h>
-
-int _putchar(char c);
-void *_memset(void *s, int c, size_t n);
-char *_memcpy(char *dest, char *src, unsigned int n);
-char *_strchr(char *s, char c);
-unsigned int _strspn(char *s, char *accept);
-char *_strpbrk(char *s, char *accept);
-char *_strstr(char *haystack, char *needle);
-void print_chessboard(char (*a)[8]);
-void print_diagsums(int *a, int size);
-void set_string(char **s, char *to);
-
+int _putchar(char c);  /* An example function declaration */
+char *_strcat(char *dest, char *src);
+char *_strncat(char *dest, char *src, int n);
+char *_strncpy(char *dest, char *src, int n);
+int _strcmp(char *s1, char *s2);
+void reverse_array(int *a, int n);
+char *string_toupper(char *);
+char *cap_string(char *);
+char *leet(char *);
+char *rot13(char *);
+void print_number(int n);
 #endif
