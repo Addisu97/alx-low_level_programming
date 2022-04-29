@@ -1,12 +1,5 @@
-#ifndef BIT_H
-#define BIT_H
-
-/*
- * File: holberton.h
-* Desc: Header file containing prototypes for all functions
- *       written in the 0x13-bit_manipulation directory.
- */
-
+#ifndef BITMAN_H
+#define BITMAN_H
 int _putchar(char c);
 unsigned int binary_to_uint(const char *b);
 void print_binary(unsigned long int n);

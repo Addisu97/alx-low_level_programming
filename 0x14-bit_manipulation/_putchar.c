@@ -1,4 +1,4 @@
-#include "bit.h"
+#include "bitman.h"
 #include <unistd.h>
 
 /**
